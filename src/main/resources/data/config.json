@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "settings": {
+    "plugin_prefix": "{#FFDAB9}[牧场]§7 %msg%",
+    "time_format": "{#FFDAB9}%days_{#E0B081}天% {#FFDAB9}%hours_{#E0B081}时% {#FFDAB9}%minutes_{#E0B081}分% {#FFDAB9}%seconds_{#E0B081}秒%",
+    "debug_external_entity_filter": false
+  },
+  "tool_time_tiers": {
+    "normal": 1000,
+    "rare": 1500,
+    "epic": 2000,
+    "legendary": 2500
+  },
+  "default_rarity": "normal",
+  "animal_rarity_map": {
+    "小狐狸": "rare",
+    "小蜜蜂": "rare"
+  },
+  "gui": {
+    "menu": {
+      "title": "牧场管理菜单",
+      "rows": 3
+    },
+    "detail": {
+      "title_prefix": ""
+    },
+    "list": {}
+  }
+}

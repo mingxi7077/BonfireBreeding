@@ -1,0 +1,203 @@
+﻿{
+  "default_entity": true,
+  "config_name": "小蜜蜂",
+  "type": "BEE",
+  "display_name": "{#E5B341}小蜜蜂",
+  "rarity": "rare",
+  "time_growth": 300,
+  "harvest_cooldown": 300,
+  "harvest_exp": 2,
+  "breeding_items": [
+    {
+      "item": {
+        "amount": "1",
+        "material": "POPPY"
+      },
+      "time": 500,
+      "chance": 50.0,
+      "need_partner": true,
+      "courtship_duration": 180
+    },
+    {
+      "item": {
+        "amount": "1",
+        "material": "DANDELION"
+      },
+      "time": 400,
+      "chance": 60.0,
+      "need_partner": true,
+      "courtship_duration": 180
+    }
+  ],
+  "egg": {
+    "amount": "1",
+    "material": "BEE_SPAWN_EGG",
+    "display_name": "{#E5B341}小蜜蜂"
+  },
+  "drop_items": [
+    {
+      "level_required": 0,
+      "item": {
+        "amount": "1-3",
+        "material": "HONEYCOMB",
+        "display_name": "{#DAA520}蜂巢碎片"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1"
+        }
+      }
+    },
+    {
+      "level_required": 3,
+      "item": {
+        "amount": "1",
+        "material": "ia:redstone_labs:royal_jelly",
+        "display_name": "{#E5B341}蜂王浆"
+      },
+      "amount": "1",
+      "chance": 10.0,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_PLAYER_LEVELUP:0.8:1.2"
+        }
+      }
+    }
+  ],
+  "death_drops": [
+    {
+      "level_required": 0,
+      "item": { "amount": "1-3", "material": "HONEYCOMB", "display_name": "{#DAA520}蜂巢碎片" },
+      "chance": 100.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_BEE_DEATH:1:1" } }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1", "material": "ia:bf_food_pack:fengmi", "display_name": "{#E5B341}蜂蜜" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 3,
+      "item": { "amount": "1", "material": "ia:redstone_labs:royal_jelly", "display_name": "{#E5B341}蜂王浆" },
+      "chance": 20.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_PLAYER_LEVELUP:0.8:1.2" } }
+    }
+  ],
+  "passive_drop_items": [
+    {
+      "id": 1006001001001,
+      "item": {
+        "amount": "1",
+        "material": "HONEYCOMB",
+        "display_name": "{#DAA520}蜂巢碎片"
+      },
+      "amount": "1",
+      "chance": 40.0,
+      "time": 600,
+      "animation": {
+        "lite_animation": {
+          "sound": "BLOCK_BEEHIVE_WORK:0.8:1",
+          "particle": "FALLING_NECTAR:10:0.3:0.3:0.3"
+        }
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": 2006001001001,
+      "item": {
+        "amount": "1",
+        "material": "GLASS_BOTTLE"
+      },
+      "time": 400,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "1",
+            "material": "ia:bf_food_pack:fengmi",
+            "display_name": "{#E5B341}蜂蜜"
+          },
+          "amount": "1",
+          "chance": 100.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ITEM_BOTTLE_FILL:1:1"
+            }
+          }
+        },
+        {
+          "level_required": 3,
+          "item": {
+            "amount": "1",
+            "material": "ia:redstone_labs:royal_jelly",
+            "display_name": "{#E5B341}蜂王浆"
+          },
+          "amount": "1",
+          "chance": 15.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_PLAYER_LEVELUP:0.8:1.2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2006001001002,
+      "item": {
+        "amount": "1",
+        "material": "SHEARS"
+      },
+      "time": 500,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "1-3",
+            "material": "HONEYCOMB",
+            "display_name": "{#DAA520}蜂巢碎片"
+          },
+          "amount": "1",
+          "chance": 100.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "BLOCK_BEEHIVE_SHEAR:1:1"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ambient_effects": {
+    "particle": "FALLING_NECTAR:3:0.5:0.5:0.5",
+    "interval_ticks": 80
+  },
+  "mating_duration": 5,
+  "breed_cooldown_ratio": 0.5,
+  "mood": {
+    "pet_gain": 3,
+    "feed_gain": 5,
+    "hurt_loss": 25,
+    "harvest_loss": 2,
+    "breed_min_mood": 45
+  },
+  "hunger": {
+    "max_hunger": 200,
+    "saturation_duration": 1800,
+    "hunger_interval": 1728,
+    "starve_interval": 30,
+    "starve_damage": 1.0,
+    "auto_heat_chance": 5.0,
+    "feed_items": [
+      { "item": { "material": "POPPY" }, "value": 30 },
+      { "item": { "material": "DANDELION" }, "value": 25 }
+    ]
+  }
+}
+

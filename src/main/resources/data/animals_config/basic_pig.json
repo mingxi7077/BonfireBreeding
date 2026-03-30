@@ -1,0 +1,177 @@
+﻿{
+  "default_entity": true,
+  "config_name": "猪猪",
+  "type": "PIG",
+  "display_name": "{#E8A0BF}猪猪",
+  "rarity": "normal",
+  "time_growth": 600,
+  "harvest_cooldown": 1200,
+  "harvest_exp": 2,
+  "breeding_items": [
+    {
+      "item": {
+        "amount": "1",
+        "material": "CARROT"
+      },
+      "time": 650,
+      "chance": 45.0,
+      "need_partner": true,
+      "courtship_duration": 240
+    },
+    {
+      "item": {
+        "amount": "1",
+        "material": "POTATO"
+      },
+      "time": 500,
+      "chance": 60.0,
+      "need_partner": true,
+      "courtship_duration": 240
+    }
+  ],
+  "egg": {
+    "amount": "1",
+    "material": "PIG_SPAWN_EGG",
+    "display_name": "{#E8A0BF}猪猪"
+  },
+  "drop_items": [
+    {
+      "level_required": 0,
+      "item": {
+        "amount": "1-2",
+        "material": "ia:redstone_labs:pig_bristle",
+        "display_name": "{#C29B7B}猪鬃"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1"
+        }
+      }
+    }
+  ],
+  "death_drops": [
+    {
+      "level_required": 0,
+      "item": { "amount": "2-3", "material": "ia:bf_food_pack:yuanqiezhurou", "display_name": "{#E8A0BF}原切猪肉" },
+      "chance": 100.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_PIG_DEATH:1:1" } }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:porkloins", "display_name": "{#E8A0BF}五花肉" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:porkrib", "display_name": "{#E8A0BF}猪肋排" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:ham", "display_name": "{#E8A0BF}猪蹄" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:grease", "display_name": "{#D9A84E}油脂" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2", "material": "ia:redstone_labs:hoof", "display_name": "{#6A6359}蹄子" },
+      "chance": 80.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "3-5", "material": "ia:bf_food_pack:coarseskin", "display_name": "{#7A5B3A}粗皮" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:redstone_labs:animal_fat", "display_name": "{#D9A84E}动物脂肪" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    }
+  ],
+  "passive_drop_items": [
+    {
+      "id": 1003001001001,
+      "item": {
+        "amount": "1",
+        "material": "COCOA_BEANS",
+        "display_name": "{#755C17}粪便"
+      },
+      "amount": "1-2",
+      "chance": 100.0,
+      "time": 1080,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1",
+          "particle": "DRIPPING_HONEY:20:0.2:0.2:0.2"
+        }
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": 2003001001001,
+      "item": {
+        "amount": "1",
+        "material": "BRUSH"
+      },
+      "time": 500,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "1-3",
+            "material": "ia:redstone_labs:pig_bristle",
+            "display_name": "{#C29B7B}猪鬃"
+          },
+          "amount": "1",
+          "chance": 90.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ITEM_BRUSH_BRUSHING_GENERIC:1:1"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ambient_effects": {
+    "particle": "DRIPPING_HONEY:1:0.3:0.3:0.3",
+    "interval_ticks": 200
+  },
+  "mating_duration": 5,
+  "breed_cooldown_ratio": 0.5,
+  "mood": {
+    "pet_gain": 6,
+    "feed_gain": 10,
+    "hurt_loss": 12,
+    "harvest_loss": 3,
+    "breed_min_mood": 35
+  },
+  "hunger": {
+    "max_hunger": 200,
+    "saturation_duration": 1800,
+    "hunger_interval": 1728,
+    "starve_interval": 30,
+    "starve_damage": 1.0,
+    "auto_heat_chance": 5.0,
+    "feed_items": [
+      { "item": { "material": "CARROT" }, "value": 30 },
+      { "item": { "material": "POTATO" }, "value": 25 }
+    ]
+  }
+}
+

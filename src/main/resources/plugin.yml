@@ -1,0 +1,44 @@
+name: BonfireBreeding
+version: '${project.version}'
+main: com.bonfire.breeding.BonfireBreeding
+api-version: '1.21'
+description: Realistic animal husbandry plugin
+authors: [Bonfire]
+softdepend: [ItemsAdder, MythicMobs, MCPets]
+commands:
+  bbreeding:
+    description: BonfireBreeding main command
+    aliases: [bb, breeding]
+    permission: bonfire.breeding.command
+    usage: /bbreeding <menu|reload|give|info|list|transfer|unbind|toggle|help|admin>
+permissions:
+  bonfire.breeding.command:
+    default: true
+    description: Base command permission
+  bonfire.breeding.admin:
+    default: op
+    description: Admin permission for reload and config editing
+  bonfire.breeding.interact:
+    default: true
+    description: Allow interacting with any breeding animal
+  bonfire.breeding.interact.*:
+    default: true
+    description: Allow interacting with all animal types
+  bonfire.breeding.harvest:
+    default: true
+    description: Allow harvesting any breeding animal
+  bonfire.breeding.harvest.*:
+    default: true
+    description: Allow harvesting all animal types
+  bonfire.breeding.tool:
+    default: true
+    description: Allow using tools on any breeding animal
+  bonfire.breeding.tool.*:
+    default: true
+    description: Allow using tools on all animal types
+  bonfire.breeding.breed:
+    default: true
+    description: Allow breeding any animal
+  bonfire.breeding.breed.*:
+    default: true
+    description: Allow breeding all animal types

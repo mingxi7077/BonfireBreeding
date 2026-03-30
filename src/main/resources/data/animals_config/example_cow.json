@@ -1,0 +1,203 @@
+﻿{
+  "default_entity": true,
+  "config_name": "牛牛",
+  "type": "COW",
+  "display_name": "{#C4741E}牛牛",
+  "rarity": "normal",
+  "time_growth": 900,
+  "harvest_cooldown": 1500,
+  "harvest_exp": 2,
+  "breeding_items": [
+    {
+      "item": {
+        "amount": "1",
+        "material": "WHEAT"
+      },
+      "time": 800,
+      "chance": 40.0,
+      "need_partner": true,
+      "courtship_duration": 300
+    },
+    {
+      "item": {
+        "amount": "1",
+        "material": "CARROT"
+      },
+      "time": 600,
+      "chance": 60.0,
+      "need_partner": true,
+      "courtship_duration": 300
+    }
+  ],
+  "egg": {
+    "amount": "1",
+    "material": "COW_SPAWN_EGG",
+    "display_name": "{#C4741E}牛牛"
+  },
+  "drop_items": [
+    {
+      "level_required": 0,
+      "item": {
+        "amount": "1-2",
+        "material": "ia:redstone_labs:thick_fur",
+        "display_name": "{#7A5B3A}厚毛皮"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1"
+        }
+      }
+    }
+  ],
+  "death_drops": [
+    {
+      "level_required": 0,
+      "item": { "amount": "2-3", "material": "ia:bf_food_pack:yuanqieniurou", "display_name": "{#8B4513}原切牛肉" },
+      "chance": 100.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_COW_DEATH:1:1" } }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:beef_tenderloin", "display_name": "{#8B4513}牛里脊" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:legcow", "display_name": "{#8B4513}牛腿" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:costillavacaes", "display_name": "{#8B4513}牛肋" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "4-7", "material": "ia:bf_food_pack:coarseskin", "display_name": "{#7A5B3A}粗皮" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:redstone_labs:animal_fat", "display_name": "{#D9A84E}动物脂肪" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "4", "material": "ia:redstone_labs:hoof", "display_name": "{#6A6359}蹄子" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 3,
+      "item": { "amount": "1", "material": "ia:bf_food_pack:cow_skull", "display_name": "{#E0D5C2}牛头骨" },
+      "chance": 100.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_PLAYER_LEVELUP:0.8:1.2" } }
+    }
+  ],
+  "passive_drop_items": [
+    {
+      "id": 1001001001002,
+      "item": {
+        "amount": "1",
+        "material": "COCOA_BEANS",
+        "display_name": "{#755C17}粪便"
+      },
+      "amount": "1-2",
+      "chance": 100.0,
+      "time": 1200,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1",
+          "particle": "DRIPPING_HONEY:20:0.2:0.2:0.2"
+        }
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": 2001001001001,
+      "item": {
+        "amount": "1",
+        "material": "SHEARS"
+      },
+      "time": 600,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "1-2",
+            "material": "ia:redstone_labs:thick_fur",
+            "display_name": "{#7A5B3A}厚毛皮"
+          },
+          "amount": "1",
+          "chance": 100.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_SHEEP_SHEAR:1:1"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": 2001001001002,
+      "item": {
+        "amount": "1",
+        "material": "BUCKET"
+      },
+      "time": 400,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "1",
+            "material": "MILK_BUCKET",
+            "display_name": "{#F5F5DC}鲜牛奶"
+          },
+          "amount": "1",
+          "chance": 85.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_COW_MILK:1:1"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ambient_effects": {
+    "particle": "DRIPPING_HONEY:2:0.4:0.4:0.4",
+    "interval_ticks": 120
+  },
+  "mating_duration": 5,
+  "breed_cooldown_ratio": 0.5,
+  "mood": {
+    "pet_gain": 5,
+    "feed_gain": 8,
+    "hurt_loss": 15,
+    "harvest_loss": 3,
+    "breed_min_mood": 40
+  },
+  "hunger": {
+    "max_hunger": 200,
+    "saturation_duration": 1800,
+    "hunger_interval": 1728,
+    "starve_interval": 30,
+    "starve_damage": 1.0,
+    "auto_heat_chance": 5.0,
+    "feed_items": [
+      { "item": { "material": "WHEAT" }, "value": 30 },
+      { "item": { "material": "CARROT" }, "value": 20 }
+    ]
+  }
+}
+

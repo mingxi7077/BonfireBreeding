@@ -1,0 +1,216 @@
+﻿{
+  "default_entity": true,
+  "config_name": "咕咕鸡",
+  "type": "CHICKEN",
+  "display_name": "{#F5F5DC}咕咕鸡",
+  "rarity": "normal",
+  "time_growth": 400,
+  "harvest_cooldown": 300,
+  "harvest_exp": 1,
+  "breeding_items": [
+    {
+      "item": {
+        "amount": "1",
+        "material": "WHEAT_SEEDS"
+      },
+      "time": 400,
+      "chance": 50.0,
+      "need_partner": true,
+      "courtship_duration": 180
+    },
+    {
+      "item": {
+        "amount": "1",
+        "material": "SWEET_BERRIES"
+      },
+      "time": 300,
+      "chance": 70.0,
+      "need_partner": true,
+      "courtship_duration": 180
+    }
+  ],
+  "egg": {
+    "amount": "1",
+    "material": "CHICKEN_SPAWN_EGG",
+    "display_name": "{#F5F5DC}咕咕鸡"
+  },
+  "drop_items": [
+    {
+      "level_required": 0,
+      "item": {
+        "amount": "1-2",
+        "material": "FEATHER",
+        "display_name": "{#F0F0F0}羽毛"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1"
+        }
+      }
+    }
+  ],
+  "death_drops": [
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:tujirou", "display_name": "{#F5F5DC}土鸡肉" },
+      "chance": 100.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_CHICKEN_DEATH:1:1" } }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2", "material": "ia:bf_food_pack:jitui", "display_name": "{#F5F5DC}鸡腿" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2", "material": "ia:bf_food_pack:jichi", "display_name": "{#F5F5DC}鸡翅" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2-4", "material": "FEATHER", "display_name": "{#F0F0F0}羽毛" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 2,
+      "item": { "amount": "1", "material": "ia:redstone_labs:small_tooth", "display_name": "{#CCCCCC}小牙" },
+      "chance": 15.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "female_only": true,
+      "item": { "amount": "1", "material": "EGG", "display_name": "{#F5E6CA}鸡蛋" },
+      "chance": 20.0,
+      "animation": { "lite_animation": {} }
+    }
+  ],
+  "passive_drop_items": [
+    {
+      "id": 1004001001001,
+      "female_only": true,
+      "item": {
+        "amount": "1",
+        "material": "EGG",
+        "display_name": "{#F5E6CA}鸡蛋"
+      },
+      "amount": "1",
+      "chance": 70.0,
+      "time": 1500,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_CHICKEN_EGG:1:1",
+          "particle": "CLOUD:5:0.1:0.1:0.1"
+        }
+      }
+    },
+    {
+      "id": 1004001001002,
+      "item": {
+        "amount": "1",
+        "material": "ia:redstone_labs:eggshell_powder",
+        "display_name": "{#E8E1C6}蛋壳粉"
+      },
+      "amount": "1",
+      "chance": 30.0,
+      "time": 600,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:0.8:1",
+          "particle": "CLOUD:3:0.1:0.1:0.1"
+        }
+      }
+    },
+    {
+      "id": 1004001001003,
+      "item": {
+        "amount": "1",
+        "material": "COCOA_BEANS",
+        "display_name": "{#755C17}粪便"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "time": 1080,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1",
+          "particle": "DRIPPING_HONEY:15:0.1:0.1:0.1"
+        }
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": 2004001001001,
+      "item": {
+        "amount": "1",
+        "material": "SHEARS"
+      },
+      "time": 300,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "2-4",
+            "material": "FEATHER",
+            "display_name": "{#F0F0F0}羽毛"
+          },
+          "amount": "1",
+          "chance": 100.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_ITEM_PICKUP:1:1"
+            }
+          }
+        },
+        {
+          "level_required": 3,
+          "item": {
+            "amount": "1",
+            "material": "ia:redstone_labs:exotic_feather",
+            "display_name": "{#B76CFB}异域羽毛"
+          },
+          "amount": "1",
+          "chance": 8.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_PLAYER_LEVELUP:0.8:1.2"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ambient_effects": {
+    "particle": "WAX_OFF:1:0.15:0.1:0.15",
+    "interval_ticks": 240
+  },
+  "mating_duration": 5,
+  "breed_cooldown_ratio": 0.5,
+  "mood": {
+    "pet_gain": 4,
+    "feed_gain": 6,
+    "hurt_loss": 20,
+    "harvest_loss": 2,
+    "breed_min_mood": 30
+  },
+  "hunger": {
+    "max_hunger": 200,
+    "saturation_duration": 1800,
+    "hunger_interval": 1728,
+    "starve_interval": 30,
+    "starve_damage": 1.0,
+    "auto_heat_chance": 5.0,
+    "feed_items": [
+      { "item": { "material": "WHEAT_SEEDS" }, "value": 25 },
+      { "item": { "material": "SWEET_BERRIES" }, "value": 20 }
+    ]
+  }
+}
+

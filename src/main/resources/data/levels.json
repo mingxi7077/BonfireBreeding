@@ -1,0 +1,35 @@
+{
+  "levels": [
+    {
+      "display_name": "{#707173}新手牧民",
+      "need_exp": 0,
+      "rewards": []
+    },
+    {
+      "display_name": "{#97ADA5}牲畜看护",
+      "need_exp": 200,
+      "rewards": []
+    },
+    {
+      "display_name": "{#C5DB6D}畜牧能手",
+      "need_exp": 500,
+      "rewards": []
+    },
+    {
+      "display_name": "{#EFA216}资深牧场主",
+      "need_exp": 1000,
+      "rewards": []
+    },
+    {
+      "display_name": "{#44BCC9}育种大师",
+      "need_exp": 2000,
+      "rewards": []
+    },
+    {
+      "display_name": "{#8F5ACB}万兽通灵",
+      "need_exp": 5000,
+      "rewards": []
+    }
+  ],
+  "new_level_msg": "§7恭喜！你已晋升为 %level_name%！"
+}

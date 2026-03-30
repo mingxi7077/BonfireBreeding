@@ -1,0 +1,203 @@
+﻿{
+  "default_entity": true,
+  "config_name": "羊咩",
+  "type": "SHEEP",
+  "display_name": "{#E8E1C6}羊咩",
+  "rarity": "normal",
+  "time_growth": 750,
+  "harvest_cooldown": 1200,
+  "harvest_exp": 2,
+  "breeding_items": [
+    {
+      "item": {
+        "amount": "1",
+        "material": "WHEAT"
+      },
+      "time": 700,
+      "chance": 45.0,
+      "need_partner": true,
+      "courtship_duration": 240
+    },
+    {
+      "item": {
+        "amount": "1",
+        "material": "SWEET_BERRIES"
+      },
+      "time": 500,
+      "chance": 65.0,
+      "need_partner": true,
+      "courtship_duration": 240
+    }
+  ],
+  "egg": {
+    "amount": "1",
+    "material": "SHEEP_SPAWN_EGG",
+    "display_name": "{#E8E1C6}羊咩"
+  },
+  "drop_items": [
+    {
+      "level_required": 0,
+      "item": {
+        "amount": "1-2",
+        "material": "STRING",
+        "display_name": "{#F5F5F5}毛线"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1"
+        }
+      }
+    }
+  ],
+  "death_drops": [
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:yuanqieyangrou", "display_name": "{#C29B7B}原切羊肉" },
+      "chance": 100.0,
+      "animation": { "lite_animation": { "sound": "ENTITY_SHEEP_DEATH:1:1" } }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1", "material": "ia:bf_food_pack:sheeploins", "display_name": "{#C29B7B}羊里脊" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:sheepracks", "display_name": "{#C29B7B}羊小排" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "1-2", "material": "ia:bf_food_pack:legsleep", "display_name": "{#C29B7B}羊腿" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2-4", "material": "ia:bf_food_pack:coarseskin", "display_name": "{#7A5B3A}粗皮" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2-3", "material": "WHITE_WOOL", "display_name": "{#F5F5F5}羊毛" },
+      "chance": 100.0,
+      "animation": { "lite_animation": {} }
+    },
+    {
+      "level_required": 0,
+      "item": { "amount": "2", "material": "ia:redstone_labs:hoof", "display_name": "{#6A6359}蹄子" },
+      "chance": 70.0,
+      "animation": { "lite_animation": {} }
+    }
+  ],
+  "passive_drop_items": [
+    {
+      "id": 1002001001001,
+      "item": {
+        "amount": "1",
+        "material": "WHITE_WOOL",
+        "display_name": "{#F5F5F5}羊毛"
+      },
+      "amount": "1",
+      "chance": 50.0,
+      "time": 400,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_SHEEP_SHEAR:0.8:1",
+          "particle": "CLOUD:8:0.2:0.3:0.2"
+        }
+      }
+    },
+    {
+      "id": 1002001001002,
+      "item": {
+        "amount": "1",
+        "material": "COCOA_BEANS",
+        "display_name": "{#755C17}粪便"
+      },
+      "amount": "1",
+      "chance": 100.0,
+      "time": 1200,
+      "animation": {
+        "lite_animation": {
+          "sound": "ENTITY_ITEM_PICKUP:1:1",
+          "particle": "DRIPPING_HONEY:20:0.2:0.2:0.2"
+        }
+      }
+    }
+  ],
+  "tools": [
+    {
+      "id": 2002001001001,
+      "item": {
+        "amount": "1",
+        "material": "SHEARS"
+      },
+      "time": 400,
+      "baby": false,
+      "drops": [
+        {
+          "level_required": 0,
+          "item": {
+            "amount": "2-4",
+            "material": "WHITE_WOOL",
+            "display_name": "{#F5F5F5}羊毛"
+          },
+          "amount": "1",
+          "chance": 100.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_SHEEP_SHEAR:1:1"
+            }
+          }
+        },
+        {
+          "level_required": 2,
+          "item": {
+            "amount": "1",
+            "material": "ia:redstone_labs:keratin",
+            "display_name": "{#D8C990}角蛋白"
+          },
+          "amount": "1",
+          "chance": 25.0,
+          "animation": {
+            "lite_animation": {
+              "sound": "ENTITY_ITEM_PICKUP:0.8:1"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ambient_effects": {
+    "particle": "CLOUD:1:0.3:0.3:0.3",
+    "interval_ticks": 160
+  },
+  "mating_duration": 5,
+  "breed_cooldown_ratio": 0.5,
+  "mood": {
+    "pet_gain": 6,
+    "feed_gain": 8,
+    "hurt_loss": 12,
+    "harvest_loss": 2,
+    "breed_min_mood": 35
+  },
+  "hunger": {
+    "max_hunger": 200,
+    "saturation_duration": 1800,
+    "hunger_interval": 1728,
+    "starve_interval": 30,
+    "starve_damage": 1.0,
+    "auto_heat_chance": 5.0,
+    "feed_items": [
+      { "item": { "material": "WHEAT" }, "value": 30 },
+      { "item": { "material": "SWEET_BERRIES" }, "value": 20 }
+    ]
+  }
+}
+
