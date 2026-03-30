@@ -11,6 +11,22 @@
 
     <name>BonfireBreeding</name>
     <description>A realistic animal husbandry plugin for Minecraft - Shift+RightClick harvest without baby shrink</description>
+    <url>https://github.com/mingxi7077/BonfireBreeding</url>
+
+    <licenses>
+        <license>
+            <name>GNU General Public License v3.0</name>
+            <url>https://www.gnu.org/licenses/gpl-3.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/mingxi7077/BonfireBreeding</url>
+        <connection>scm:git:https://github.com/mingxi7077/BonfireBreeding.git</connection>
+        <developerConnection>scm:git:https://github.com/mingxi7077/BonfireBreeding.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <properties>
         <java.version>21</java.version>

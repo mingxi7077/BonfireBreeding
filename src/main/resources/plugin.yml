@@ -4,6 +4,7 @@ main: com.bonfire.breeding.BonfireBreeding
 api-version: '1.21'
 description: Realistic animal husbandry plugin
 authors: [Bonfire]
+website: https://github.com/mingxi7077/BonfireBreeding
 softdepend: [ItemsAdder, MythicMobs, MCPets]
 commands:
   bbreeding:
