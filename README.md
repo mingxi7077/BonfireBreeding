@@ -8,6 +8,8 @@
 
 BonfireBreeding is a Paper plugin for Bonfire's animal husbandry gameplay, covering breeding, growth, harvesting, animal state tracking, and admin tooling.
 
+> Non-commercial source-available. Commercial use requires prior written permission via `mingxi7707@qq.com`.
+
 ## Highlights
 
 - Config-driven animal definitions, levels, breeding items, and passive drops.
