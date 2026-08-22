@@ -37,8 +37,7 @@ BonfireBreeding is a Paper plugin for Bonfire's animal husbandry gameplay, cover
 
 ### License
 
-This repository currently uses the `Bonfire Non-Commercial Source License 1.0`.
-See [LICENSE](LICENSE) for the exact terms.
+This repository is released under the [MIT License](LICENSE).
 
 ---
 
@@ -71,5 +70,11 @@ BonfireBreeding 是 Bonfire 的 Paper 养殖玩法插件，覆盖繁殖、成长
 
 ### 授权
 
-本仓库当前采用 `Bonfire Non-Commercial Source License 1.0`。
-具体条款见 [LICENSE](LICENSE)。
+本仓库采用 [MIT License](LICENSE) 开源。
+
+---
+
+## 联系方式 / Contact
+
+项目问题或合作沟通，请发送邮件至 [mingxi7707@qq.com](mailto:mingxi7707@qq.com)。
+For project questions or collaboration, email [mingxi7707@qq.com](mailto:mingxi7707@qq.com).
